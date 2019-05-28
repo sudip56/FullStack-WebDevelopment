@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.parentdiv{
+			height: 500px;
+			width: 500px;
+			background-color: red;
+			margin: auto;
+			position: relative;
+			top: 25px;
+			overflow: hidden;
+		}
+		.child{
+			position: absolute;
+			top: -50px;
+			left: 0px;
+			right: 0px;
+			transition: 3s;
+
+			
+		}
+		.parentdiv:hover .child{
+			position: absolute;
+			top: 400px;
+			left: 0px;
+			right: 0px;
+			
+			
+		}
+		.parentdiv img{
+			height: 100%;
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div class="parentdiv">
+			<img src="file:///C:/Users/sudip%20banerjee/Desktop/FullStackWebDevelopment/FullStack-WebDevelopment/PicResources/pic%202.jpg" alt="sudip">
+			<div class="child">
+				<p style="color: white; background-color: pink; font-size: 20px;text-align: center;">This is sudip</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

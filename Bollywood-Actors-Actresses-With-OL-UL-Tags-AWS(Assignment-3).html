@@ -52,14 +52,36 @@
 				width: 1129px;
 				margin: 5px;
 				overflow: auto;
+				position: relative;
 
 			}
-			img{
+			.contentDetails.img{
 				height: auto;
 				width: auto;
 			}
 			.contentDetails{
 					margin: 5px;
+					position: relative;
+					z-index: 1;
+
+				}
+				.contentDetails:hover .aboutpic{
+					position: absolute;
+					top: 240px;
+					left: 20px;
+					background-color: pink;
+				}
+				.contactme{
+					height: 50px;
+					width: 100px;
+					background-color: red;
+					position: fixed;
+					top: 140px;
+					right: -12px;
+					color: white;
+					transform: rotate(270deg);
+					z-index: 2;
+					text-align: center;
 
 				}
 		</style>
@@ -211,6 +233,10 @@
 				</ul>
 			</div>
 			<div class="content">
+				<div class="contactme">
+					<h3>contact us</h3>
+					
+				</div>
 			<div>
 				<ul>
  					<li>
@@ -228,6 +254,7 @@
 									<span style="color: green">Bio:</span>
 										Aamir is no doubt one of the most dedicated actors in this world. With his recent success in India and China markets combined he has got the title of Worlds Biggest Superstar. He went through rapid transformations in his body structure for his films to bring out the reality factor in his characters. This is also one of the reasons why his films and he is loved all over the world. His most visible changes include the movies like Ghajini, 3 idiots, Talaash, Dhoom 3, PK and Dangal. With his recent successful movies like Dangal, Pk , Talaash and TV serial Satyamev jayate, his image has become more of a serious actor. However, the truth is that he is a fabulous actor when it comes to comedy too. He has played some really funny iconic characters in some cult comedy movies like Andaaz Apna Apna, Ishq, Mela, Dil chahta hai and many more. He has also done a lot of TVC where his character was funny like Coca cola, Tata sky and Snapdeal.
 								</div>
+								<div class="aboutpic">This is real hero</div>
 						</div>	
 						<div class="contentDetails" style="background-color: #f0b7a4"; >
  							<h3 id="akshay" style="background-color: #ff4949;color: #eeeeee; width: 200px;padding: 5px;">Details of Akshay Kumar:</h3>
